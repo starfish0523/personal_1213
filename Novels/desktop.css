@@ -78,7 +78,7 @@
         background-color: rgba(255, 255, 255, .6)
     }
     .main .title {
-        padding: 30px;
+        padding: 30px 30px 10px 30px;
     }
     .main .title .topic {
         float: left;
@@ -151,100 +151,6 @@
     .main .content a:hover {
         background-color: #155355;
     }
-    .profile {
-        background-color: #fff;
-        height: 470px;
-    }
-    .profile .intro {
-        width: 480px;
-        padding-top: 10px;
-        padding-left: 30px;
-        padding-right: 30px;
-        float: left;
-    }
-    .profile .intro h2 {
-        width: 420px;
-        margin: auto;
-        color: cadetblue;
-        font-size: 18px;
-        font-style: italic;
-        text-align: left;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        padding: 5px;
-        border-bottom: 2px solid cadetblue;
-    }
-    .profile .intro h2:first-letter {
-        font-size: 150%;
-    }
-    .profile .intro p {
-        font-size: 14px;
-        line-height: 20px;
-        padding-top: 10px;
-        padding-left: 30px;
-        padding-right: 20px;
-    }
-    .profile .contact {
-        width: 480px;
-        padding-top: 10px;
-        padding-right: 30px;
-        float: left;
-    }
-    .profile .contact h2 {
-        width: 420px;
-        margin: auto;
-        color: cadetblue;
-        font-size: 18px;
-        font-style: italic;
-        text-align: left;
-        padding: 5px;
-        margin-top: 10px;
-        margin-bottom: 20px;
-        border-bottom: 2px solid cadetblue;
-    }
-    .profile .contact h2:first-letter {
-        font-size: 150%;
-    }
-    .profile .contact .item {
-        margin-left: 20px;
-    }
-    .profile .contact .item p {
-        font-size: 14px;
-    }
-    .profile .contact input {
-        width: 420px;
-        margin-top: 5px;
-        margin-bottom: 5px;
-        padding: 5px;
-        border-radius: 5px;
-        box-shadow: 1px 1px 10px #888;
-    }
-    .profile .contact textarea {
-        width: 420px;
-        height: 120px;
-        overflow: auto;
-        margin-top: 5px;
-        margin-top: 5px;
-        padding: 5px;
-        border-radius: 5px;
-        box-shadow: 1px 1px 10px #888;
-    }
-    .profile .contact button {
-        float: right;
-        /*        color: #fff;*/
-        /*        font-size: 14px;*/
-        padding-left: 10px;
-        padding-right: 10px;
-        margin-top: 20px;
-        margin-right: 20px;
-        border-radius: 5px;
-        background-color: cadetblue;
-    }
-    .profile .contact button a {
-        color: #fff;
-        font-size: 14px;
-        text-decoration: none;
-    }
     footer .menu {
         float: left;
     }
@@ -253,12 +159,12 @@
         padding: 20px 10px 20px;
         margin-left: 10px;
     }
-    footer .menu a {
+    footer .menu .item a {
         text-decoration: none;
         color: #155355;
         font-size: 14px;
     }
-    footer .menu a:hover {
+    footer .menu .item a:hover {
         color: #dbe8e8;
     }
     footer .copyright {

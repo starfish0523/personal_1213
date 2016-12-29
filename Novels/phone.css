@@ -1,0 +1,203 @@
+@media screen and (max-width:480px) {
+    .fixed-width {
+        width: 96%;
+        margin: auto;
+    }
+    .col-3 {
+        width: 96%;
+        margin: auto;
+        padding-left: 1%;
+        padding-right: 1%;
+/*        float: left;*/
+    }
+    .col-4 {
+        width: 96%;
+        margin: auto;
+        padding-left: 1%;
+        padding-right: 1%;
+/*        float: left;*/
+    }
+    body {
+        background-color: #75c6b6;
+    }
+
+    nav {
+        height: 340px;
+        background-color: #fff;
+        text-align: center;
+    }
+    nav .logo {
+        width: 40%;
+        height: auto;
+/*        float: left;*/
+        margin: auto;
+        padding-top: 10px;
+/*        margin-left: 50px;*/
+    }
+    nav .menu {
+        width: 100%;
+        margin: auto;
+        padding: 3%;
+/*        float: right;*/
+        margin-top: 10px;
+    }
+    nav .menu .icon {
+        display: block;
+        float: right;
+        margin-left: 10px;
+        color: cadetblue;
+        text-decoration: none;
+    }
+    nav .menu p {
+        display: block;
+        margin-bottom: 15px;
+        text-align: right;
+        color: cadetblue;
+        font-size: 12px;
+    }
+    nav .menu ul {
+        margin: 0;
+        padding: 0;
+    }
+    nav .menu li {
+        width: 100%;
+        margin-bottom: 2px;
+        text-align: center;
+        float: left;
+        list-style-type: none;
+    }
+    nav .menu ul li a {
+        display: block;
+        padding-left: 2%;
+        padding-right: 2%;
+        border-top: solid 1px #000;
+        line-height: 32px;
+        color: black;
+        font-size: 14px;
+        text-decoration: none;
+        transition: all .5s;
+    }
+    nav .menu ul li a:hover {
+        border-top: solid 4px cadetblue;
+        color: cadetblue;
+    }
+    .main {
+        background-color: rgba(255, 255, 255, .6)
+    }
+    .main .title {
+        width: 96%;
+        margin: auto;
+        padding: 10px 1% 1% 10px;
+        margin-bottom: 10px;
+    }
+    .main .title .topic {
+/*        float: left;*/
+        width: 50%;
+        font-size: 1.6em;
+        line-height: 1.6em;
+        margin-bottom: 10px;
+        border-bottom: 4px solid #000;
+    }
+    .main .title .attention {
+/*        float: left;*/
+        width: 100%;
+        margin-top: 20px;
+/*        border-bottom: 1px solid #000;*/
+    }
+    .main .title .attention p {
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 300;
+        text-indent: -1.2em;
+        padding-left: 1.2em;
+    }
+    .main .content {
+        height: auto;
+        padding-bottom: 10px;
+    }
+    .main .content .novel {
+        text-align: center;
+        margin: 1%;
+    }
+    .main .content .novel h2 {
+        font-size: 24px;
+        letter-spacing: 3px;
+        font-weight: 500;
+        margin-bottom: 10px;
+        padding-top: 10px;
+        border-top: 1px solid #000;
+    }
+    .main .content .novel h2:first-letter {
+        font-size: 40px;
+    }
+    .main .content .gallery {
+        background-color: #fff;
+        padding: 8px;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        box-shadow: 3px 3px 10px #888;
+    }
+    .main .content p {
+/*        display: inline-block;*/
+/*        float: left;*/
+        width: 96%;
+        font-weight: 300;
+        text-align: left;
+        padding-left: 15px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        margin-left: 10px;
+        border-left: 5px solid #000;
+    }
+    .main .content a {
+/*        display: inline-block;*/
+/*        float: right;*/
+        display: block;
+        width: 60%;
+        margin:auto;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        padding: 5px 10%;
+        border-radius: 15px;
+        background-color: cadetblue;
+        color: #fff;
+        letter-spacing: 1px;
+        text-decoration: none;
+        box-shadow: 1px 1px 10px #888;
+    }
+    .main .content a:hover {
+        background-color: #155355;
+    }
+    footer .menu {
+        display: block;
+        width: 100%;
+        padding-left: 2%;
+    }
+    footer .menu .item {
+        float: left;
+        padding: 1% 2% 1%;
+        margin-left: 1%;
+    }
+    footer .menu .item a {
+        text-decoration: none;
+        color: #155355;
+        font-size: 14px;
+    }
+    footer .menu .item a:hover {
+        color: #dbe8e8;
+    }
+    footer .copyright {
+        clear: both;
+        display: block;
+        width: 100%;
+        text-align: center;
+/*        float: right;*/
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 2%;
+    }
+    footer .copyright p {
+        color: #155355;
+        font-size: 13px;
+    }
+}

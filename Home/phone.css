@@ -83,122 +83,77 @@
     }
     header .content {
         width: 100%;
+        height: 780px;
         margin: auto;
         background-color: #fff;
         padding-top: 15px;
         padding-bottom: 30px;
     }
     header .content .banner {
-        width: 100%;
+        width: 96%;
         margin: auto;
+    }
+    header .content h2 {
+        width: 96%;
+        margin: auto;
+        color: cadetblue;
+        font-size: 1.2em;
+        font-style: italic;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding-bottom: 3px;
+        border-bottom: 2px solid cadetblue;
+    }
+    header .content h2:first-letter {
+        font-size: 150%;
+    }
+    header .content .intro {
+        width: 96%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    header .content .intro p {
+        width: 96%;
+        margin: auto;
+        font-size: .9em;
+        line-height: 1.6em;
     }
     header .content .foreword {
-        display: inline-block;
-        /*        float: left;*/
-        margin-top: 10px;
-        margin-left: 3%;
-        padding-left: 10px;
-        border-left: solid 4px black;
-        text-align: right;
-    }
-    header .foreword p {
-        font-size: 12px;
-        line-height: 16px;
-    }
-    .profile {
-        background-color: #fff;
-        height: auto;
-    }
-    .profile .intro {
-        width: 98%;
+        width: 96%;
         margin: auto;
-        /*        margin-top: 50px;*/
-        /*        float: left;*/
-    }
-    .profile .intro h2 {
-        width: 90%;
-        margin: auto;
-        font-size: 18px;
-        font-style: italic;
-        color: cadetblue;
-        text-align: center;
-        padding-top: 10px;
-        padding-bottom: 5px;
-        border-bottom: 2px solid cadetblue;
-    }
-    .profile .intro h2:first-letter {
-        font-size: 150%;
-    }
-    .profile .intro p {
-        font-size: 12px;
-        line-height: 20px;
-        padding-left: 5%;
-        padding-right: 5%;
-        padding-top: 20px;
-        padding-bottom: 30px;
-    }
-    .profile .contact {
-        width: 98%;
-        height: auto;
-        margin: auto;
-        /*        float: left;*/
-    }
-    .profile .contact h2 {
-        width: 90%;
-        margin: auto;
-        margin-bottom: 10px;
-        font-size: 18px;
-        font-style: italic;
-        color: cadetblue;
-        text-align: center;
-        padding-top: 10px;
-        padding-bottom: 5px;
-        border-bottom: 2px solid cadetblue;
-    }
-    .profile .contact h2:first-letter {
-        font-size: 150%;
-    }
-    .profile .contact .item {
-        width: 100%;
-        margin: auto;
-        padding: 2%;
-    }
-    .profile .contact .item p {
-        font-size: 14px;
-    }
-    .profile .contact input {
-        width: 100%;
-        margin-top: 5px;
-        margin-bottom: 5px;
-        padding: 5px;
-        border-radius: 5px;
-        box-shadow: 1px 1px 10px #ddd;
-    }
-    .profile .contact textarea {
-        width: 100%;
-        height: 120px;
-        overflow: auto;
-        margin-top: 5px;
-        margin-top: 5px;
-        padding: 5px;
-        border-radius: 5px;
-        box-shadow: 1px 1px 10px #ddd;
-    }
-    .profile .contact button {
-        /*        float: right;*/
-        width: 50%;
-        padding-left: 10px;
-        padding-right: 10px;
         margin-top: 10px;
         margin-bottom: 20px;
-        margin-left: 25%;
-        border-radius: 5px;
-        background-color: cadetblue;
+        text-align: right;
     }
-    .profile .contact button a {
-        color: #fff;
+    header .content .foreword p {
+        padding-right: 1%;
         font-size: .9em;
+        line-height: 1.6em;
+    }
+    header .content .contact {
+        width: 96%;
+        margin: auto;
+    }
+    header .content .contact .email {
+        width: 96%;
+        margin: auto;
+        text-align: center;
+    }
+    header .content .contact .email a {
+        display: inline-block;
+        vertical-align: middle;
+        color: cadetblue;
         text-decoration: none;
+        font-size: 24px;
+        line-height: 24px;
+    }
+    header .content .contact .email p {
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 5px;
+        font-size: 14px;
+        line-height: 28px;
     }
     footer .menu {
         width: 100%;
