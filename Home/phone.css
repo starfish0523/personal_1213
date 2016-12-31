@@ -16,6 +16,8 @@
     }
     body {
         background-color: #75c6b6;
+        padding-top: 1%;
+        padding-bottom: 2%;
     }
     nav {
         width: 100%;
@@ -83,11 +85,10 @@
     }
     header .content {
         width: 100%;
-        height: 780px;
+        height: 100%;
         margin: auto;
         background-color: #fff;
         padding-top: 15px;
-        padding-bottom: 30px;
     }
     header .content .banner {
         width: 96%;
@@ -116,7 +117,7 @@
     header .content .intro p {
         width: 96%;
         margin: auto;
-        font-size: .9em;
+        font-size: .8em;
         line-height: 1.6em;
     }
     header .content .foreword {
@@ -128,19 +129,20 @@
     }
     header .content .foreword p {
         padding-right: 1%;
-        font-size: .9em;
+        font-size: .8em;
         line-height: 1.6em;
     }
     header .content .contact {
         width: 96%;
         margin: auto;
+        margin-bottom: 20px;
     }
-    header .content .contact .email {
-        width: 96%;
-        margin: auto;
-        text-align: center;
+    header .content .contact div {
+        width: 90%;
+        margin-left: 8%;
+        text-align: left;
     }
-    header .content .contact .email a {
+    header .content .contact a {
         display: inline-block;
         vertical-align: middle;
         color: cadetblue;
@@ -148,32 +150,34 @@
         font-size: 24px;
         line-height: 24px;
     }
-    header .content .contact .email p {
+    header .content .contact a:hover {
+        color: #155355;
+    }
+    header .content .contact p {
         display: inline-block;
         vertical-align: middle;
         margin-left: 5px;
-        font-size: 14px;
+        font-size: .8em;
         line-height: 28px;
     }
+    footer {
+        background-color: #fff;
+        padding-bottom: 1%;
+    }
     footer .menu {
-        width: 100%;
-        /*        float: left;*/
+        width: 96%;
+        margin: auto;
+        text-align: center;
+        padding: 1% 2% 1%;
     }
     footer .menu .item {
-        float: left;
-        margin: auto;
+        display: inline-block;
         padding: 1%;
-        margin-left: 5%;
-        margin-top: 5px;
-        margin-bottom: 5px;
     }
     footer .menu a {
         text-decoration: none;
         color: #155355;
-        font-size: 14px;
-    }
-    footer .menu a:hover {
-        color: #dbe8e8;
+        font-size: .9em;
     }
     footer .copyright {
         /*        float: right;*/
@@ -184,7 +188,6 @@
     }
     footer .copyright p {
         color: #155355;
-        font-size: 12px;
-        margin-bottom: 10px;
+        font-size: .8em;
     }
 }

@@ -1,5 +1,4 @@
 @media screen and (min-width:960px) {
-    /*        css reset*/
     .fixed-width {
         width: 960px;
         margin: auto;
@@ -17,12 +16,12 @@
         float: left;
     }
     body {
-        /*        background-color: #75c6b6;*/
+        background-color: #75c6b6;
         background-image: url(img/background.png);
         background-size: cover;
         background-attachment: fixed;
-        padding-bottom: 30px;
         padding-top: 10px;
+        padding-bottom: 30px;
     }
     /*        nav */
     nav {
@@ -80,89 +79,118 @@
         color: cadetblue;
     }
     .main {
-        background-color: rgba(255, 255, 255, .6)
+        background-color: #fff;
+        padding-bottom: 30px;
     }
-    .main .title {
-        padding: 30px 30px 10px 30px;
-    }
-    .main .title .topic {
-        float: left;
-        width: 160px;
-        font-size: 30px;
-        line-height: 1.5em;
-        margin-bottom: 20px;
-        border-bottom: 4px solid #000;
-    }
-    .main .title .attention {
-        float: left;
-        width: 740px;
-        font-size: 12px;
-        line-height: 24px;
-        font-weight: 300;
-        margin-top: 10px;
-        padding-left: 50px;
-        padding-bottom: 8px;
-        border-bottom: 1px solid #000;
-    }
-    .main .content {
-        height: 560px;
+    .main .left {
+        display: inline-block;
+        width: 480px;
         padding: 10px;
     }
-    .main .content .novel {
-        text-align: center;
+    .main .left .topic {
+        width: 420px;
+        margin-left: 30px;
+        border-bottom: 3px solid #444;
     }
-    .main .content .novel h2 {
+    .main .left .topic i {
+        line-height: 24px;
+        font-weight: 200;
+        font-size: 36px;
+        margin-right: 5px;
+        color: #444;
+    }
+    .main .left .topic h2 {
+        display: inline-block;
         font-size: 24px;
-        letter-spacing: 3px;
+        line-height: 24px;
+        letter-spacing: 2px;
+        font-weight: 600;
+        color: #444;
+    }
+    .main .left .topic h2:first-letter {
+        font-size: 36px;
         font-weight: 500;
-        margin-bottom: 20px;
-        border-bottom: 1px solid #000;
     }
-    .main .content .novel h2:first-letter {
-        font-size: 40px;
-    }
-    .main .content .gallery {
-        background-color: #fff;
-        padding: 8px;
-        border-radius: 5px;
-        margin-bottom: 15px;
-        box-shadow: 3px 3px 10px #888;
-    }
-    .main .content p {
-        font-weight: 300;
-        text-align: left;
-        padding-left: 15px;
+    .main .left .foreword {
+        width: 420px;
+        margin-left: 30px;
         margin-top: 20px;
-        margin-bottom: 10px;
-        margin-left: 10px;
-        border-left: 5px solid #000;
     }
-    .main .content a {
+    .main .left .foreword p {
+        font-size: 14px;
+        font-weight: 300;
+        margin-top: 10px;
+    }
+    .main .left img {
+        width: 420px;
+        margin-left: 30px;
+        margin-top: 25px;
+        box-shadow: 0px 0px 30px #888;
+    }
+    .main .right {
+        width: 480px;
+        float: right;
+    }
+    .main .rightup {
+        width: 480px;
+        height: 200px;
+    }
+    .main .rightdown {
+        width: 480px;
+    }
+    .main .rightdown .topic {
+        width: 420px;
+        margin-left: 30px;
+        border-bottom: 2px solid #444;
+    }
+    .main .rightdown .topic h3 {
+        display: inline-block;
+        font-size: 22px;
+        color: #444;
+        font-style: italic;
+    }
+    .main .rightdown .topic h3:first-letter {
+        font-size: 36px;
+    }
+    .main .rightdown .topic a {
+        display: inline-block;
+        float: right;
+        font-size: 40px;
+        text-decoration: none;
+        color: cadetblue;
+    }
+    .main .rightdown .content {
+        display: inline-block;
+        float: left;
+        width: 210px;
+    }
+    .main .rightdown .content a {
         display: block;
         width: 150px;
-        margin: auto;
-        margin-top: 20px;
-        margin-bottom: 30px;
-        padding: 5px 40px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        margin-left: 30px;
+        padding: 5px 10px;
         border-radius: 15px;
         background-color: cadetblue;
         color: #fff;
         letter-spacing: 1px;
+        text-align: center;
         text-decoration: none;
         box-shadow: 1px 1px 10px #888;
     }
-    .main .content a:hover {
+    .main .rightdown .content a:hover {
         background-color: #155355;
     }
     footer {
         background-color: #fff;
     }
     footer .menu {
-        float: left;
+        display: inline-block;
         margin-left: 20px;
     }
     footer .menu .item {
-        float: left;
+        display: inline-block;
         padding: 20px 10px 20px;
         margin-left: 10px;
     }

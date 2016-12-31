@@ -19,6 +19,8 @@
     }
     body {
         background-color: #75c6b6;
+        padding-bottom: 2%;
+        padding-top: 2%;
     }
 
     nav {
@@ -113,7 +115,7 @@
     }
     .main .content {
         height: auto;
-        padding-bottom: 10px;
+        padding-bottom: 1%;
     }
     .main .content .novel {
         text-align: center;
@@ -168,36 +170,40 @@
     .main .content a:hover {
         background-color: #155355;
     }
+    footer {
+        background-color: #fff;
+    }
     footer .menu {
-        display: block;
+        display: inline-block;
         width: 100%;
         padding-left: 2%;
+        text-align: center;
     }
     footer .menu .item {
-        float: left;
+        display: inline-block;
         padding: 1% 2% 1%;
-        margin-left: 1%;
+        margin-top: 1%;
     }
     footer .menu .item a {
         text-decoration: none;
         color: #155355;
-        font-size: 14px;
+        font-size: 1em;
     }
     footer .menu .item a:hover {
         color: #dbe8e8;
     }
     footer .copyright {
         clear: both;
-        display: block;
+        display: inline-block;
         width: 100%;
         text-align: center;
-/*        float: right;*/
+        margin-bottom: 1%;
         padding-top: 5px;
         padding-bottom: 5px;
         padding-left: 2%;
     }
     footer .copyright p {
         color: #155355;
-        font-size: 13px;
+        font-size: .8em;
     }
 }
