@@ -94,7 +94,7 @@ nav .menu ul li a:hover {
 
 .main {
     background-color: rgba(255, 255, 255, .6);
-    height: 1820px;
+    height: 900px;
 }
 
 .main .title {
@@ -123,34 +123,69 @@ nav .menu ul li a:hover {
 }
 
 .main .content {
-    margin-left: 10px;
+    width: 900px;
+    margin: auto;
 }
 
-.main .content .demo {
-    display: inline-block;
-    padding: 15px;
+.main .content .blank {
+    width: 160px;
+    height: 500px;
 }
 
 .main .content .gallery {
-    background-color: #fff;
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 5px 5px 10px #777;
+    display: block;
+    position: relative;
+    width: 220px;
+    height: 220px;
+    margin-left: 20px;
+    margin-top: 20px;
+    border: 8px solid #444;
+    text-align: center;
 }
 
-.main .content .gallery h3 {
-    padding: 5px;
-    text-align: center;
-    font-size: 18px;
+.main .content .gallery a{
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    transition: opacity .8s;
+}
+
+.main .content .gallery a:hover {
+    opacity: 1;
+}
+
+.main .content .gallery .year{
+    display: block;
+    opacity: 1;
+    position: relative;
+    margin-top: 80px;
+    color: #000;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.main .content .gallery .area {
+    display: block;
+    opacity: 1;
+    position: relative;
+    color: #000;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.main .content .gallery h2 {
+    position: relative;
+    margin-top: 80px;
+    font-size: 20px;
     font-weight: 500;
-    color: #155355;
+    cursor: pointer;
 }
 
 .main .content .gallery p {
-    text-align: center;
+    position: relative;
     font-size: 14px;
-    font-weight: 300;
-    color: #222;
+    font-weight: 400;
+    cursor: pointer;
 }
 
 footer {
