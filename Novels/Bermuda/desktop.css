@@ -82,7 +82,7 @@
         color: cadetblue;
     }
     .main {
-        background-color: rgba(255, 255, 255, .6);
+        background-color: rgba(255, 255, 255, 0.6);
         padding-top: 30px;
         padding-bottom: 30px;
     }
@@ -125,6 +125,10 @@
         font-size: 14px;
         font-weight: 300;
         margin-top: 10px;
+    }
+    .main .left .foreword p:nth-of-type(4) {
+        font-weight: 500;
+        text-indent: 2em;
     }
     .main .left img {
         width: 420px;
@@ -182,7 +186,6 @@
         border-radius: 15px;
         background-color: cadetblue;
         color: #fff;
-        font-weight: 300;
         letter-spacing: 1px;
         text-align: center;
         text-decoration: none;
@@ -190,6 +193,14 @@
     }
     .main .rightdown .content a:hover {
         background-color: #155355;
+    }
+    .main .rightdown .content .branch {
+/*        background-color: #fffb8e;*/
+        background-color: #fff;
+        color: #222;
+    }
+    .main .rightdown .content .branch:hover {
+        color: #fff;
     }
     footer {
         background-color: #fff;
