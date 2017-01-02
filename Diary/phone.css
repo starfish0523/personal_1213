@@ -8,21 +8,20 @@
         margin: auto;
         padding-left: 1%;
         padding-right: 1%;
-/*        float: left;*/
+        /*        float: left;*/
     }
     .col-4 {
         width: 96%;
         margin: auto;
         padding-left: 1%;
         padding-right: 1%;
-/*        float: left;*/
+        /*        float: left;*/
     }
     body {
         background-color: #75c6b6;
         padding-bottom: 2%;
         padding-top: 2%;
     }
-
     nav {
         height: 340px;
         background-color: #fff;
@@ -31,16 +30,16 @@
     nav .logo {
         width: 40%;
         height: auto;
-/*        float: left;*/
+        /*        float: left;*/
         margin: auto;
         padding-top: 10px;
-/*        margin-left: 50px;*/
+        /*        margin-left: 50px;*/
     }
     nav .menu {
         width: 100%;
         margin: auto;
         padding: 3%;
-/*        float: right;*/
+        /*        float: right;*/
         margin-top: 10px;
     }
     nav .menu .icon {
@@ -84,7 +83,8 @@
         color: cadetblue;
     }
     .main {
-        background-color: rgba(255, 255, 255, .6)
+        background-color: rgba(255, 255, 255, .6);
+        padding-bottom: 20px;
     }
     .main .title {
         width: 96%;
@@ -93,7 +93,7 @@
         margin-bottom: 10px;
     }
     .main .title .topic {
-/*        float: left;*/
+        /*        float: left;*/
         width: 50%;
         font-size: 1.6em;
         line-height: 1.6em;
@@ -101,10 +101,10 @@
         border-bottom: 4px solid #000;
     }
     .main .title .attention {
-/*        float: left;*/
+        /*        float: left;*/
         width: 100%;
         margin-top: 20px;
-/*        border-bottom: 1px solid #000;*/
+        /*        border-bottom: 1px solid #000;*/
     }
     .main .title .attention p {
         font-size: 14px;
@@ -114,61 +114,61 @@
         padding-left: 1.2em;
     }
     .main .content {
-        height: auto;
-        padding-bottom: 1%;
+        width: 96%;
+        margin: auto;
     }
-    .main .content .novel {
-        text-align: center;
-        margin: 1%;
+    .main .content .blank {
+        display: none;
     }
-    .main .content .novel h2 {
-        font-size: 24px;
-        letter-spacing: 3px;
-        font-weight: 500;
-        margin-bottom: 10px;
-        padding-top: 10px;
-        border-top: 1px solid #000;
-    }
-    .main .content .novel h2:first-letter {
-        font-size: 40px;
+    .main .content .gallery:before {
+        /*製作自適應正方形*/
+        content: "";
+        /**/
+        display: block;
+        /**/
+        padding-top: 100%;
+        /*padding-top的100%是父容器的width*/
     }
     .main .content .gallery {
-        background-color: #fff;
-        padding: 8px;
-        border-radius: 5px;
-        margin-bottom: 10px;
-        box-shadow: 3px 3px 10px #888;
-    }
-    .main .content p {
-/*        display: inline-block;*/
-/*        float: left;*/
-        width: 96%;
-        font-weight: 300;
-        text-align: left;
-        padding-left: 15px;
+        position: relative;
+        /*父容器相對*/
+        width: 90%;
+        margin-left: 5%;
         margin-top: 20px;
-        margin-bottom: 10px;
-        margin-left: 10px;
-        border-left: 5px solid #000;
+        border: 8px solid #444;
+        text-align: center;
+        overflow: hidden;
     }
-    .main .content a {
-/*        display: inline-block;*/
-/*        float: right;*/
+    .main .content .gallery a {
+        position: absolute;
+        /*子容器絕對*/
+        top: 0;
+        /**/
+        bottom: 0;
+        /**/
+        right: 0;
+        /**/
+        left: 0;
+        /**/
+    }
+    .main .content .gallery .year {
+        background-color: rgba(255, 255, 255, 0.5);
         display: block;
-        width: 60%;
-        margin:auto;
-        margin-top: 20px;
-        margin-bottom: 30px;
-        padding: 5px 10%;
-        border-radius: 15px;
-        background-color: cadetblue;
-        color: #fff;
-        letter-spacing: 1px;
+        height: 15%;
+        padding-top: 5%;
+        top: 35%;
+        color: #000;
+        font-size: 1.3em;
         text-decoration: none;
-        box-shadow: 1px 1px 10px #888;
     }
-    .main .content a:hover {
-        background-color: #155355;
+    .main .content .gallery .area {
+        background-color: rgba(255, 255, 255, 0.5);
+        display: block;
+        height: 15%;
+        top: 50%;
+        color: #000;
+        font-size: .9em;
+        text-decoration: none;
     }
     footer {
         background-color: #fff;

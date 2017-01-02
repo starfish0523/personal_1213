@@ -48,6 +48,9 @@
         color: cadetblue;
         text-decoration: none;
     }
+    nav .menu .icon:hover {
+        color: #155355;
+    }
     nav .menu p {
         display: block;
         margin-bottom: 15px;

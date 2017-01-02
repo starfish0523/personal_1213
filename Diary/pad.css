@@ -1,5 +1,4 @@
-@media screen and (max-width:960px) and (min-width:480px) {
-    /*        css reset*/
+@media screen and (min-width:480px) and (max-width:960px) {
     .fixed-width {
         width: 96%;
         margin: auto;
@@ -86,115 +85,114 @@
         border-top: solid 4px cadetblue;
         color: cadetblue;
     }
-    /*        header*/
-    header {
-        background-color: #fff;
-    }
-    header h2 {
-        width: 100%;
-        color: cadetblue;
-        font-size: 18px;
-        font-style: italic;
-        text-align: left;
-        margin-bottom: 10px;
-        margin-right: 30px;
-        padding-bottom: 3px;
-        border-bottom: 2px solid cadetblue;
-    }
-    header h2:first-letter {
-        font-size: 150%;
-    }
-    header p {
-        font-size: 14px;
-    }
-    header .content {
-        background-color: #fff;
-        padding-top: 10px;
-        overflow: auto;
-    }
-    header .content .banner {
-        width: 98%;
-        margin: auto;
-    }
-    header .content .intro {
-        display: inline-block;
-        float: left;
-        width: 48%;
-        margin-left: 1%;
-        margin-top: 20px;
-        padding: 2%;
-    }
-    header .content .foreword {
-        display: inline-block;
-/*        float: left;*/
-        width: 48%;
-        margin-left: 2%;
-        margin-right: 1%;
-        margin-top: 20px;
-        padding: 2%;
-    }
-    header .content .contact {
-        display: inline-block;
-/*        float: left;*/
-        width: 48%;
-        margin-left: 2%;
-        margin-right: 1%;
-        padding: 2%;
-    }
-    header .content .contact div {
-        width: 98%;
-        float: left;
-        margin-top: 5px;
-    }
-    header .content .contact a {
-        display: inline-block;
-        vertical-align: middle;
-        float: left;
-        margin-left: 10px;
-        color: cadetblue;
-        text-decoration: none;
-        font-size: 28px;
-        line-height: 28px;
-    }
-    header .content .contact p {
-        display: inline-block;
-        float: left;
-        text-align: left;
-        font-size: 14px;
-        line-height: 28px;
-        margin-left: 5px;
-    }
-
-    footer {
-        background-color: #fff;
-        width: 96%;
-        padding-top: 20px;
+    .main {
+        background-color: rgba(255, 255, 255, .6);
+        height: auto;
         padding-bottom: 10px;
     }
-    footer .menu {
-        width: 94%;
+    .main .title {
+        padding-top: 20px;
+        padding-left: 2%;
+        padding-right: 2%;
+        padding-bottom: 10px;
+    }
+    .main .title .topic {
+        float: left;
+        width: 20%;
+        font-size: 1.3em;
+        line-height: 1.6em;
+        margin-bottom: 20px;
+        border-bottom: 4px solid #000;
+    }
+    .main .title .attention {
+        float: right;
+        width: 75%;
+        height: 70px;
+        margin-left: 5%;
+    }
+    .main .title .attention p {
+        font-size: .8em;
+        line-height: 24px;
+        font-weight: 300;
+        text-indent: -1em;
+        padding-left: 1em;
+    }
+    .main .content {
+        width: 100%;
         margin: auto;
+    }
+    .main .content .blank {
+        width: 25%;
+        height: 860px;
+    }
+    .main .content .gallery:before { /*製作自適應正方形*/
+        content: ""; /**/
+        display: block; /**/
+        padding-top: 100%; /*padding-top的100%是父容器的width*/
+    }
+    .main .content .gallery {
+        position: relative; /*父容器相對*/
+        width: 30%; 
+        margin-left: 20px;
+        margin-top: 20px;
+        border: 8px solid #444;
         text-align: center;
-        border-top: 2px solid cadetblue;
+        overflow: hidden;
+    }
+    .main .content .gallery a {
+        position: absolute; /*子容器絕對*/
+        top: 0; /**/
+        bottom: 0; /**/
+        right: 0; /**/
+        left: 0; /**/
+    }
+    .main .content .gallery .year {
+        background-color: rgba(255, 255, 255, 0.5);
+        display: block;
+        height: 20%;
+        padding-top: 5%;
+        top: 30%;
+        color: #000;
+        font-size: 1.3em;
+        text-decoration: none;
+    }
+    .main .content .gallery .area {
+        background-color: rgba(255, 255, 255, 0.5);
+        display: block;
+        height: 20%;
+        top: 50%;
+        color: #000;
+        font-size: .9em;
+        text-decoration: none;
+    }
+    footer {
+        background-color: #fff;
+    }
+    footer .menu {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
     }
     footer .menu .item {
         display: inline-block;
         padding: 1% 2% 1%;
+        margin-left: 2%;
+        margin-bottom: 1%;
         margin-top: 1%;
     }
-    footer .menu a {
+    footer .menu .item a {
         text-decoration: none;
         color: #155355;
-        font-size: 1em;
+        font-size: .95em;
     }
     footer .copyright {
         display: inline-block;
         width: 100%;
+        text-align: center;
         margin-bottom: 1%;
     }
     footer .copyright p {
         color: #155355;
-        font-size: 12px;
-        text-align: center;
+        font-size: .8em;
     }
 }

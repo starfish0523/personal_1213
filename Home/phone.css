@@ -169,6 +169,7 @@
         margin: auto;
         text-align: center;
         padding: 1% 2% 1%;
+        border-top: 2px solid #155355;
     }
     footer .menu .item {
         display: inline-block;
@@ -185,6 +186,8 @@
         width: 98%;
         margin: auto;
         text-align: center;
+        margin-top: 5px;
+        margin-bottom: 5px;
     }
     footer .copyright p {
         color: #155355;
