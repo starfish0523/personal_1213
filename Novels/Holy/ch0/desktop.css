@@ -23,6 +23,7 @@
         padding-top: 10px;
         padding-bottom: 30px;
     }
+    
     /*        nav */
     nav {
         height: 150px;
@@ -82,124 +83,121 @@
         color: cadetblue;
     }
     .main {
-        background-color: rgba(255, 255, 255, 0.6);
-        padding-top: 30px;
-        padding-bottom: 30px;
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 30px;
+        color: #fff;
+        position: relative;
     }
-    .main .left {
-        display: inline-block;
-        width: 480px;
-        padding: 10px;
-    }
-    .main .left .topic {
-        width: 420px;
-        margin-left: 30px;
-        border-bottom: 3px solid #444;
-    }
-    .main .left .topic i {
-        line-height: 24px;
-        font-weight: 200;
-        font-size: 36px;
-        margin-right: 5px;
-        margin-bottom: 10px;
-        color: #444;
-    }
-    .main .left .topic h2 {
-        display: inline-block;
-        font-size: 24px;
-        line-height: 24px;
-        letter-spacing: 2px;
-        font-weight: 600;
-        color: #444;
-    }
-    .main .left .topic h2:first-letter {
-        font-size: 36px;
-        font-weight: 500;
-    }
-    .main .left .foreword {
-        width: 420px;
-        margin-left: 30px;
-        margin-top: 20px;
-    }
-    .main .left .foreword p {
-        font-size: 14px;
-        font-weight: 300;
-        margin-top: 10px;
-    }
-    .main .left .foreword p:nth-of-type(5) {
-        font-weight: 500;
-        text-indent: 2em;
-    }
-    .main .left img {
-        width: 420px;
-        margin-left: 30px;
-        margin-top: 25px;
-        box-shadow: 0px 0px 30px #888;
-    }
-    .main .right {
-        width: 480px;
-        float: right;
-    }
-    .main .rightup {
-        width: 480px;
-        height: 200px;
-    }
-    .main .rightdown {
-        width: 480px;
-    }
-    .main .rightdown .topic {
-        width: 420px;
-        margin-left: 30px;
-        border-bottom: 2px solid #444;
-    }
-    .main .rightdown .topic h3 {
-        display: inline-block;
-        font-size: 22px;
-        color: #444;
-        font-style: italic;
-    }
-    .main .rightdown .topic h3:first-letter {
-        font-size: 36px;
-    }
-    .main .rightdown .topic a {
-        display: inline-block;
-        float: right;
-        font-size: 40px;
+
+    .main .arrow {
+        position: fixed;
+        padding: 0px 5px;
+        border-radius: 30px;
+        bottom: 150px;
+        right: 80px;
+        display: block;
         text-decoration: none;
-        color: cadetblue;
+        background-color: rgba(0, 0, 0, 0.7);
+        color: #fff474;
     }
-    .main .rightdown .topic a:hover {
-        color: #155355;
+    .main .arrow:hover {
+        background-color: #fff474;
+        color: rgba(0, 0, 0, 0.7);
     }
-    .main .rightdown .content {
+    .main .topic {
+        width: 900px;
+        border-bottom: 1px solid #fff;
+        margin-bottom: 30px;
+        padding-bottom: 5px;
+    }
+    .main .topic .title {
+        display: inline-block;
+        width: 200px;
+        font-size: 20px;
+        letter-spacing: 1px;
+        border-top: 4px solid #fff;
+    }
+    .main .topic .icon {
+        display: inline-block;
+        float: right;
+        margin-left: 5px;
+        font-size: 30px;
+        font-weight: 100;
+        text-decoration: none;
+        color: #fff474;
+    }
+    .main .topic .icon:nth-of-type(3){
+        display: none;
+    }
+    .main .topic .icon:hover {
+        color: #b2a944;
+    }
+    .main .content .left {
         display: inline-block;
         float: left;
-        width: 210px;
+        width: 120px;
+        margin-top: 20px;
     }
-    .main .rightdown .content a {
+    .main .content .left a {
         display: block;
         width: 150px;
-        margin-top: 15px;
-        margin-bottom: 15px;
-        margin-left: 30px;
+        margin-top: 5px;
         padding: 5px 10px;
-        border-radius: 15px;
-        background-color: cadetblue;
-        color: #fff;
-        letter-spacing: 1px;
-        text-align: center;
+        border-radius: 0px 15px;
+        border-bottom: 1px solid #fff474;
+        color: #fff474;
         text-decoration: none;
-        box-shadow: 1px 1px 10px #888;
+        font-weight: 300;
+        letter-spacing: 1px;
+/*        text-align: center;*/
     }
-    .main .rightdown .content a:hover {
-        background-color: #155355;
-    }
-    .main .rightdown .content .branch {
-        background-color: #fff;
+    .main .content .left a:nth-of-type(1) {
+        background-color: #fff474;
         color: #222;
     }
-    .main .rightdown .content .branch:hover {
-        color: #fff;
+    .main .content .left a:hover {
+        background-color: #fff474;
+        color: #222;
+    }
+    .main .content .text {
+        display: inline-block;
+        width: 620px;
+        margin-left: 100px;
+
+    }
+    .main .content .text p {
+        margin-bottom: 30px;
+        font-size: 13px;
+        letter-spacing: 1px;
+        font-weight: 300;
+        text-indent: 2em;
+    }
+    .main .content .text p img {
+        width: 200px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .main .tail {
+        width: 900px;
+        text-align: right;
+        padding-top: 10px;
+        margin-bottom: 10px;
+        border-top: 1px solid #fff;
+    }
+    .main .tail .icon a{
+        display: inline-block;
+        float: right;
+        margin-left: 5px;
+        font-size: 30px;
+        font-weight: 100;
+        text-decoration: none;
+        color: #fff474;
+    }
+    .main .tail .icon a:nth-of-type(3) {
+        display: none;
+    }
+    .main .tail .icon a:hover {
+        color: #b2a944;
     }
     footer {
         background-color: #fff;

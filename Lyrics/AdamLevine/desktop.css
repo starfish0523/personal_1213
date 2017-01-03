@@ -108,38 +108,55 @@
         width: 900px;
         border-bottom: 1px solid #fff;
         margin-bottom: 30px;
-        padding-bottom: 5px;
+/*        padding-bottom: 5px;*/
     }
     .main .topic .title {
         display: inline-block;
         width: 200px;
-        font-size: 20px;
+        font-size: 24px;
         letter-spacing: 1px;
-        border-top: 4px solid #fff;
+        border-bottom: 4px solid #fff;
     }
-    .main .topic .icon {
+    .main .topic .track {
+        display: inline-block;
+        margin-left: 15px;
+        font-size: 24px;
+        font-family:Fredericka the Great;
+        font-weight: 300;
+        font-style: italic;
+    }
+    .main .topic .right {
+        display: inline-block;
+        float: right;
+        width: 160px;
+    }
+    .main .topic .right .icon {
         display: inline-block;
         float: right;
         margin-left: 5px;
-        font-size: 30px;
+        font-size: 34px;
         font-weight: 100;
         text-decoration: none;
         color: #fff474;
     }
-    .main .topic .icon:hover {
+    .main .topic .right .icon:hover {
         color: #b2a944;
+    }
+    .main .topic .right p {
+        font-size: 12px;
+        padding-top: 15px;
     }
     .main .content .left {
         display: inline-block;
         float: left;
-        width: 120px;
-        margin-top: 20px;
+        width: 200px;
+        margin-top: 10px;
     }
     .main .content .left a {
         display: block;
-        width: 150px;
+        width: 200px;
         margin-top: 5px;
-        padding: 5px 10px;
+        padding: 5px 15px;
         border-radius: 0px 15px;
         border-bottom: 1px solid #fff474;
         color: #fff474;
@@ -148,7 +165,7 @@
         letter-spacing: 1px;
 /*        text-align: center;*/
     }
-    .main .content .left a:nth-of-type(2) {
+    .main .content .left a:nth-of-type(1) {
         background-color: #fff474;
         color: #222;
     }
@@ -156,18 +173,44 @@
         background-color: #fff474;
         color: #222;
     }
+    .main .content .left .album {
+        width: 200px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .main .content .left .intro {
+        padding-top: 10px;
+        border-top: 1px solid #fff;
+    }
+    .main .content .left .intro p{
+        font-size: 14px;
+        font-weight: 300;
+        margin-bottom: 5px;        
+    }
     .main .content .text {
         display: inline-block;
-        width: 620px;
-        margin-left: 100px;
+        width: 560px;
+        margin-left: 80px;
 
     }
+    .main .content .text iframe {
+        margin-bottom: 20px;
+    }
+    .main .content .text h3 {
+        margin-bottom: 50px;
+        text-align: center;
+        font-weight: 300;
+        font-size: 14px;
+        color: #fff474;
+    }
     .main .content .text p {
+        margin-top: 30px;
         margin-bottom: 30px;
-        font-size: 13px;
+        font-size: 14px;
+        line-height: 20px;
         letter-spacing: 1px;
         font-weight: 300;
-        text-indent: 2em;
+        text-align: center;
     }
     .main .content .text p img {
         width: 200px;
@@ -185,7 +228,7 @@
         display: inline-block;
         float: right;
         margin-left: 5px;
-        font-size: 30px;
+        font-size: 34px;
         font-weight: 100;
         text-decoration: none;
         color: #fff474;
