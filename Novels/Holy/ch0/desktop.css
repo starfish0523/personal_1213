@@ -149,6 +149,7 @@
         text-decoration: none;
         font-weight: 300;
         letter-spacing: 1px;
+        transition: 800ms;
 /*        text-align: center;*/
     }
     .main .content .left a:nth-of-type(1) {
