@@ -9,6 +9,17 @@
     <link rel="stylesheet" href="pad.css">
     <link rel="stylesheet" href="phone.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="jquery.bxslider.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="jquery.bxslider.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".slider").bxSlider({
+                mode: "fade",
+                captions: true
+            });
+        });
+    </script>
     <title>小海星的 築宇角</title>
 </head>
 
@@ -30,7 +41,15 @@
     </nav>
     <header class="fixed-width clearfix">
         <div class="content">
-            <div class="banner"><img src="img/banner-01.jpg" alt=""></div>
+            <div class="banner">
+                <ul class="slider">
+                    <li><img src="img/banner-01.png" alt=""></li>
+                    <li><img src="img/banner-02.png" alt=""></li>
+                    <li><img src="img/banner-03.png" alt=""></li>
+                    <li><img src="img/banner-04.png" alt=""></li>
+                    <li><img src="img/banner-05.png" alt=""></li>
+                </ul>
+            </div>
             <div class="intro">
                 <h2>Author</h2>
                 <p>

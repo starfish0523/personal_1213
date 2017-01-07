@@ -1,5 +1,6 @@
     @import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great');
     /*font-family:Fredericka the Great*/
+    
     @import url('https://fonts.googleapis.com/css?family=Philosopher');
     @import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);
     * {
@@ -15,7 +16,8 @@
     h4,
     h5,
     h6,
-    p {
+    p,
+    ul {
         margin: 0;
         padding: 0;
     }
@@ -23,6 +25,7 @@
     img {
         width: 100%;
         vertical-align: top;
+        /*防止圖片底下出現莫名的padding*/
     }
     
     .clearfix {

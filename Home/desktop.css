@@ -93,8 +93,11 @@
     }
     header .content .banner {
         width: 800px;
+        height: 320px;
         margin: auto;
+        margin-bottom: 20px;
     }
+
     header .content .intro {
         width: 400px;
         margin-left: 80px;

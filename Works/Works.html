@@ -4,12 +4,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
+    <title>我做 / Works</title>
     <link rel="stylesheet" href="global.css">
     <link rel="stylesheet" href="desktop.css">
     <link rel="stylesheet" href="pad.css">
     <link rel="stylesheet" href="phone.css">
-    <title>我做 / Works</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/source/jquery.fancybox.css">
+    <link rel="stylesheet" href="/source/helpers/jquery.fancybox-thumbs.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.1.1/masonry.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.1/imagesloaded.pkgd.min.js"></script>
+    <script src="/source/jquery.fancybox.pack.js"></script>
+    <script src="/source/helpers/jquery.fancybox-thumbs.js"></script>
+    <script>
+        $(function () {
+            $(".content").imagesLoaded(function () {
+                $(".content").masonry({
+                    isFitWidth: true
+                });
+            });
+            $(".fancybox").fancybox({
+                openSpeed: 500,
+                closeSpeed: 500,
+                nextSpeed: 500,
+                prevSpeed: 500,
+                padding: 8, //邊框寬度
+                helpers: {
+                    thumbs: {
+                        width: 80 //縮圖寬度
+                    },
+                    title: {
+                        type: "inside",
+                    }
+                }
+            });
+        });
+    </script>
 </head>
 
 <body>
@@ -39,85 +70,65 @@
             <div style="clear:both"></div>
         </div>
         <div class="content">
-            <div class="demo col-3">
-                <div class="gallery">
-                    <img src="img/postcard04.png" alt="三芝淺水灣">
-                    <h3>Postcard_淺水灣</h3>
-                    <p>2016 / 新北市，三芝
-                        <br>小築&nbsp;製</p>
-                </div>
+            <div class="gallery">
+                <a href="img/postcard04b.png" class="fancybox" rel="postcard" title="三芝 淺水灣 / 風景明信片 / 2016 Starfish"><img src="img/postcard04.png" alt="三芝淺水灣"></a>
+                <h3>Postcard_淺水灣</h3>
+                <p>2016 / 新北市，三芝
+                    <br>小築&nbsp;製</p>
             </div>
-            <div class="demo col-3">
-                <div class="gallery">
-                    <img src="img/cloud02.png" alt="張祈樂">
-                    <h3>Postcard_夜光雲_樂</h3>
-                    <p>2016 / 首版實體書紀念明信片
-                        <br>小築&nbsp;製</p>
-                </div>
+            <div class="gallery">
+                <a href="img/cloud02b.png" class="fancybox" rel="cloud" title="夜光雲 / 紀念明信片 / 2016 Starfish"><img src="img/cloud02.png" alt="張祈樂"></a>
+                <h3>Postcard_夜光雲_樂</h3>
+                <p>2016 / 首版實體書紀念明信片
+                    <br>小築&nbsp;製</p>
             </div>
-            <div class="demo col-3">
-                <div class="gallery">
-                    <img src="img/cloud03.png" alt="易承鈞">
-                    <h3>Postcard_夜光雲_鈞</h3>
-                    <p>2016 / 首版實體書紀念明信片
-                        <br>小築&nbsp;製</p>
-                </div>
+            <div class="gallery">
+                <a href="img/cloud03b.png" class="fancybox" rel="cloud" title="夜光雲 / 紀念明信片 / 2016 Starfish"><img src="img/cloud03.png" alt="易承鈞"></a>
+                <h3>Postcard_夜光雲_鈞</h3>
+                <p>2016 / 首版實體書紀念明信片
+                    <br>小築&nbsp;製</p>
             </div>
-            <div class="demo col-3">
-                <div class="gallery">
-                    <img src="img/cloud01.png" alt="夜光雲">
-                    <h3>Postcard_夜光雲</h3>
-                    <p>2016 / 首版實體書紀念明信片
-                        <br>小築&nbsp;製</p>
-                </div>
+            <div class="gallery">
+                <a href="img/cloud01b.png" class="fancybox" rel="cloud" title="夜光雲 / 紀念明信片 / 2016 Starfish"><img src="img/cloud01.png" alt="夜光雲"></a>
+                <h3>Postcard_夜光雲</h3>
+                <p>2016 / 首版實體書紀念明信片
+                    <br>小築&nbsp;製</p>
             </div>
-            <div class="demo col-3">
-                <div class="gallery">
-                    <img src="img/postcard01.png" alt="好望角">
-                    <h3>Postcard_好望角</h3>
-                    <p>2015 / 新竹，好望角
-                        <br>小築&nbsp;製</p>
-                </div>
+            <div class="gallery">
+                <a href="img/postcard01b.png" class="fancybox" rel="postcard" title="新竹 好望角 / 風景明信片 / 2015 Starfish"><img src="img/postcard01.png" alt="好望角"></a>
+                <h3>Postcard_好望角</h3>
+                <p>2015 / 新竹，好望角
+                    <br>小築&nbsp;製</p>
             </div>
-            <div class="demo col-3">
-                <div class="gallery">
-                    <img src="img/postcard02.png" alt="除草有感">
-                    <h3>Postcard_除草有感</h3>
-                    <p>2015 / 台北，華山文化園區
-                        <br>小築&nbsp;製</p>
-                </div>
+            <div class="gallery">
+                <a href="img/postcard02b.png" class="fancybox" rel="postcard" title="台北 華山 / 風景明信片 / 2015 Starfish"><img src="img/postcard02.png" alt="除草有感"></a>
+                <h3>Postcard_除草有感</h3>
+                <p>2015 / 台北，華山文化園區
+                    <br>小築&nbsp;製</p>
             </div>
-            <div class="demo col-3">
-                <div class="gallery">
-                    <img src="img/postcard03.png" alt="除草有感">
-                    <h3>Postcard_踩過紅花</h3>
-                    <p>2015 / 高雄，武德殿
-                        <br>小築&nbsp;製</p>
-                </div>
+            <div class="gallery">
+                <a href="img/postcard03b.png" class="fancybox" rel="postcard" title="高雄 武德殿 / 風景明信片 / 2015 Starfish"><img src="img/postcard03.png" alt="踩過紅花"></a>
+                <h3>Postcard_踩過紅花</h3>
+                <p>2015 / 高雄，武德殿
+                    <br>小築&nbsp;製</p>
             </div>
-            <div class="demo col-3">
-                <div class="gallery">
-                    <img src="img/bermuda01.png" alt="百慕達">
-                    <h3>Postcard_百慕達</h3>
-                    <p>2013 / 首版實體書紀念明信片
-                        <br>若晨&nbsp;製</p>
-                </div>
+            <div class="gallery">
+                <a href="img/bermuda01b.png" class="fancybox" rel="bermuda" title="百慕達，三角 / 紀念明信片 / 2013 Starfish"><img src="img/bermuda01.png" alt="百慕達"></a>
+                <h3>Postcard_百慕達</h3>
+                <p>2013 / 首版實體書紀念明信片
+                    <br>若晨&nbsp;製</p>
             </div>
-            <div class="demo col-3">
-                <div class="gallery">
-                    <img src="img/bermuda02.png" alt="南與N">
-                    <h3>Postcard_南與N</h3>
-                    <p>2013 / 首版實體書紀念明信片
-                        <br>小築&nbsp;製</p>
-                </div>
+            <div class="gallery">
+                <a href="img/bermuda02b.png" class="fancybox" rel="bermuda" title="百慕達，三角 / 紀念明信片 / 2013 Starfish"><img src="img/bermuda02.png" alt="南與N"></a>
+                <h3>Postcard_南與N</h3>
+                <p>2013 / 首版實體書紀念明信片
+                    <br>小築&nbsp;製</p>
             </div>
-            <div class="demo col-3">
-                <div class="gallery">
-                    <img src="img/bermuda03.png" alt="高徹行">
-                    <h3>Postcard_高徹行</h3>
-                    <p>2013 / 首版實體書紀念明信片
-                        <br>小築&nbsp;製</p>
-                </div>
+            <div class="gallery">
+                <a href="img/bermuda03b.png" class="fancybox" rel="bermuda" title="百慕達，三角 / 紀念明信片 / 2013 Starfish"><img src="img/bermuda03.png" alt="高徹行"></a>
+                <h3>Postcard_高徹行</h3>
+                <p>2013 / 首版實體書紀念明信片
+                    <br>小築&nbsp;製</p>
             </div>
         </div>
         <div style="clear:both"></div>
